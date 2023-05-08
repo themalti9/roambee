@@ -209,6 +209,23 @@ body {
   border: 12px solid #7e5c19;
   border-radius: 50%;
   margin-right: 12px;
+  -webkit-animation: expand 2s ease infinite;
+}
+@-webkit-keyframes expand {
+  0% {
+    border: 12px solid #000;
+  }
+  50% {
+    border: 12px solid #7e5c19;
+  }
+  100% {
+    border: 12px solid #000;
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 .about-us .alerts-business-sec .eta-sec li .alerts-sub-title {
   font-size: 23px;

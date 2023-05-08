@@ -21,7 +21,7 @@
                             Supply Chain
                             Visibility &
                             Intelligence</h1>
-                        <p data-aos="fade-up">for <span>High-Value Cargo Security</span> </p>
+                        <p data-aos="fade-up">for <span class="text">High-Value Cargo Security</span> </p>
                         <a data-aos="fade-up" class="btn-red" href="">Learn More</a>
                     </div>
                     <div class="right" data-aos="fade-up">
@@ -201,15 +201,18 @@
             <div class="container">
                 <h2 data-aos="fade-up">Benefits/Business Outcomes</h2>
                 <ul>
-                    <li data-aos="fade-up">Lorem ipsum dolor sit amet. Ut quia nostrum ut commodi aliquam sed voluptas Quis aut dolore
+                    <li data-aos="fade-up">Lorem ipsum dolor sit amet. Ut quia nostrum ut commodi aliquam sed voluptas
+                        Quis aut dolore
                         placeat ad asperiores consequatur. At labore sapiente ea animi explicabo os obcaecati minus.
                         Sit Quis numquam aut numquam dolor sit ipsam itaque sit consequatur laborum est possimus labo
                     </li>
-                    <li data-aos="fade-up">Lorem ipsum dolor sit amet. Ut quia nostrum ut commodi aliquam sed voluptas Quis aut dolore
+                    <li data-aos="fade-up">Lorem ipsum dolor sit amet. Ut quia nostrum ut commodi aliquam sed voluptas
+                        Quis aut dolore
                         placeat ad asperiores consequatur. At labore sapiente ea animi explicabo os obcaecati minus.
                         Sit Quis numquam aut numquam dolor sit ipsam itaque sit consequatur laborum est possimus labo
                     </li>
-                    <li data-aos="fade-up">Lorem ipsum dolor sit amet. Ut quia nostrum ut commodi aliquam sed voluptas Quis aut dolore
+                    <li data-aos="fade-up">Lorem ipsum dolor sit amet. Ut quia nostrum ut commodi aliquam sed voluptas
+                        Quis aut dolore
                         placeat ad asperiores consequatur. At labore sapiente ea animi explicabo os obcaecati minus.
                         Sit Quis numquam aut numquam dolor sit ipsam itaque sit consequatur laborum est possimus labo
                     </li>
@@ -260,9 +263,11 @@
                 </ul>
                 <div class="testimonials" data-aos="fade-up">
                     <div class="slider-sec">
-                        <p data-aos="fade-up">Lorem ipsum dolor sit amet. Ut quia nostrum ut commodi aliquam sed voluptas Quis aut dolore
+                        <p data-aos="fade-up">Lorem ipsum dolor sit amet. Ut quia nostrum ut commodi aliquam sed
+                            voluptas Quis aut dolore
                             placeat ad asperiores consequatur. At labore sapiente ea animi explicabo os obcaecati minus.
-                            Sit Quis numquam aut numquam dolor sit ipsam itaque sit consequatur laborum est possimus labo
+                            Sit Quis numquam aut numquam dolor sit ipsam itaque sit consequatur laborum est possimus
+                            labo
                         </p>
                         <h3 data-aos="fade-up">Name Here</h3>
                     </div>
@@ -271,7 +276,7 @@
         </div>
         <div class="supply-chain-sec-resource gradient-back">
             <div class="container">
-                <h2>Supply Chain Resources</h2>
+                <h2 data-aos="fade-up">Supply Chain Resources</h2>
                 <ul class="supply-chain-list">
                     <li data-aos="fade-up">
                         <a href="">Read Our Success Stories</a>
@@ -298,26 +303,34 @@
 
 </body>
 <script type="text/javascript" src="js/jquery3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/aos.js"></script>
 <script>
-     AOS.init({
-    easing: 'ease-out-back',
-    duration: 800,
-    offset: 10,
-    disable: false,
-    easing: 'ease',
-    once: true,
-  });
-  $('.count').each(function () {
-      $(this).prop('Counter', 0).animate({
-        Counter: $(this).text()
-      }, {
-        duration: 4000,
-        easing: 'swing',
-        step: function (now) {
-          $(this).text(Math.ceil(now));
-        }
-      });
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 800,
+        offset: 10,
+        disable: false,
+        easing: 'ease',
+        once: true,
     });
+    $('.count').each(function () {
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 4000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+    var typing=new Typed(".text", {
+       strings: ["", "Youtuber", "Freelancer", "Graphics Designer", "Web Designer", "Web Developer"],
+       typeSpeed: 100,
+       backSpeed: 40,
+       loop: true,
+   });
 </script>
+
 </html>

@@ -226,6 +226,7 @@ body {
                     border-left: 18px solid black;
                     border-right: 18px solid black;
                     margin-right: 15px;
+                    // -webkit-animation:spin 4s linear infinite;
                 }
 
                 div {
@@ -241,6 +242,24 @@ body {
                     border: 12px solid #7e5c19;
                     border-radius: 50%;
                     margin-right: 12px;
+                    -webkit-animation: expand 2s ease infinite;
+                }
+
+                @-webkit-keyframes expand {
+                    0% {
+                        border: 12px solid #000;
+                    }
+
+                    50% {
+                        border: 12px solid #7e5c19;
+                    }
+
+                    100% {
+                        border: 12px solid #000;
+                    }
+                }
+                @-webkit-keyframes spin { 
+                    100% { -webkit-transform: rotate(360deg); } 
                 }
 
                 .alerts-sub-title {
@@ -370,9 +389,10 @@ body {
     }
 
     .awards-sec {
-        ul{
+        ul {
             margin: 40px 0px 40px;
         }
+
         .testimonials {
             background: #fff;
             border-radius: 20px;
