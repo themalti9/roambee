@@ -54,6 +54,12 @@ body {
   font-weight: 500;
   padding: 12px 60px;
   border-radius: 18px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.about-us .about-us-banner .better-sec a.btn-red:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #fff;
+  color: #ec1b2e;
 }
 .about-us .about-us-banner .better-sec img {
   display: block;
@@ -155,6 +161,11 @@ body {
   text-decoration: none;
   font-size: 32px;
   font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.about-us .supply-chain-sec .supply-chain-box a:hover {
+  text-decoration: underline;
+  color: #fff;
 }
 .about-us .alerts-business-sec {
   padding: 60px 0px;
@@ -252,6 +263,11 @@ body {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   font-size: 30px;
   color: #000;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.about-us .alerts-business-sec .warehouse li a:hover {
+  text-decoration: underline;
+  color: #fff;
 }
 .about-us .companies-sec,
 .about-us .awards-sec {
@@ -302,6 +318,11 @@ body {
 .about-us .experience-sec h2 a {
   color: #000;
   text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.about-us .experience-sec h2 a:hover {
+  text-decoration: underline;
+  color: #fff;
 }
 .about-us .outcomes-sec {
   padding: 60px 0px;
@@ -385,17 +406,22 @@ body {
 }
 .about-us .supply-chain-sec-resource .supply-chain-list li {
   width: calc(50% - 40px);
+  box-sizing: border-box;
+}
+.about-us .supply-chain-sec-resource .supply-chain-list li a {
+  display: block;
   background: #000;
   color: #fff;
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   font-size: 28px;
   padding: 34px 43px;
   border-radius: 20px;
-  box-sizing: border-box;
-}
-.about-us .supply-chain-sec-resource .supply-chain-list li a {
-  color: #fff;
   text-decoration: underline;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.about-us .supply-chain-sec-resource .supply-chain-list li a:hover {
+  background: #fff;
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
