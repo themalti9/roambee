@@ -17,7 +17,7 @@ body {
   background: linear-gradient(90deg, rgb(253, 186, 51) 50%, rgb(254, 220, 0) 81%);
 }
 .about-us .about-us-banner {
-  padding-bottom: 220px;
+  padding-bottom: 207px;
 }
 .about-us .about-us-banner .better-sec {
   display: flex;
@@ -75,7 +75,7 @@ body {
   margin: 0px;
   border-radius: 30px;
   overflow: hidden;
-  margin-top: -200px;
+  margin-top: -181px;
 }
 .about-us .four-sec ul {
   display: flex;
