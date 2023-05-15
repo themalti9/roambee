@@ -1,281 +1,550 @@
-@media screen and (max-width: 768px) {
-    .about-us {
-        .about-us-banner {
-            .better-sec {
-                flex-direction: column-reverse;
-                row-gap: 21px;
-                padding: 50px 10px;
-                align-items: flex-start;
+@media screen and (max-width: 1200px) {
 
-                a.btn-red {
-                    font-size: 23px;
-                    line-height: 1.3;
-                    text-align: center;
-                    display: block;
-                    max-width: 224px;
-                    margin: 0 auto;
-                    box-sizing: border-box;
-                    padding: 12px 10px;
-                    border-radius: 14px;
-                }
+    .supply-chain-sec .supply-chain-box {
+        padding: 28px 36px;
 
-                .left {
-                    width: 100%;
-                }
+        a {
+            font-size: 30px;
+        }
+    }
 
-                img {
-                    height: auto;
-                    border-radius: 20px;
-                }
+    .alerts-business-sec .warehouse li {
+        width: calc(50% - 75px);
+        margin-bottom: 25px;
+    }
 
-                h1 {
-                    font-size: 40px;
-                    line-height: 1.2;
-                    margin-top: 20px;
-                }
+    .alerts-business-sec .eta-sec .eta-sec-box {
+        margin: 0;
+        font-size: 24px;
 
-                h3 {
-                    font-size: 20px;
-                    line-height: 1.3;
-                    margin-top: 25px;
-                    margin-bottom: 47px;
-                }
+        .alerts-sub-title {
+            font-size: 23px;
+
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 922px) {
+
+    .about-us-banner .better-sec {
+        padding: 30px 0px;
+
+        img {
+            height: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+
+            br {
+                display: none;
             }
         }
 
-        .four-sec {
-            ul {
-                padding: 23px;
-                box-sizing: border-box;
-                flex-direction: row;
-
-                li {
-                    width: 100%;
-
-                    &:nth-of-type(1),
-                    &:nth-of-type(2),
-                    &:nth-of-type(3) {
-                        border-right: 0px solid #fff;
-                        border-bottom: 2px solid #fff;
-                    }
-
-                    &:nth-of-type(4) {
-                        border-bottom: 0px solid #fff;
-                    }
-
-                    h2 {
-                        font-size: 40px;
-                    }
-                }
-            }
+        h3 {
+            font-size: 23px;
         }
 
-        .autonomous-sec {
+        a.btn-red {
+            font-size: 24px;
+        }
+    }
+
+    .autonomous-sec h2,
+    .alerts-business-sec h2,
+    .companies-sec h2,
+    .outcomes-sec h2,
+    .about-us .awards-sec h2,
+    .supply-chain-sec-resource h2 {
+        font-size: 40px;
+    }
+
+    .supply-chain-sec .supply-chain-box h2 {
+        font-size: 40px;
+    }
+
+    .alerts-business-sec .eta-sec .eta-sec-box {
+        margin: 0;
+        font-size: 22px;
+    }
+
+    .alerts-business-sec .warehouse li {
+        width: calc(50% - 11px);
+
+        a {
+            font-size: 20px;
+        }
+    }
+
+    .companies-sec ul li,
+    .awards-sec ul li {
+        width: calc(100%/3 - 20px);
+    }
+
+    .supply-chain-sec-resource .supply-chain-list li {
+        width: calc(50% - 21px);
+        padding: 30px 23px;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .about-us-banner {
+        .better-sec {
+            flex-direction: column-reverse;
+            row-gap: 21px;
             padding: 50px 0px;
+            align-items: flex-start;
+
+            a.btn-red {
+                font-size: 23px;
+                line-height: 1.3;
+                text-align: center;
+                display: block;
+                max-width: 224px;
+                margin: 0 auto;
+                box-sizing: border-box;
+                padding: 12px 10px;
+                border-radius: 14px;
+            }
+
+            .left {
+                width: 100%;
+            }
 
             img {
+                height: auto;
                 border-radius: 20px;
             }
 
+            h1 {
+                font-size: 40px;
+                line-height: 1.2;
+                margin-top: 20px;
+            }
+
+            h3 {
+                font-size: 20px;
+                line-height: 1.3;
+                margin-top: 25px;
+                margin-bottom: 47px;
+            }
+        }
+    }
+
+    .four-sec {
+        ul {
+            padding: 23px;
+            box-sizing: border-box;
+            flex-direction: row;
+
+            li {
+                width: 100%;
+
+                &:nth-of-type(1),
+                &:nth-of-type(2),
+                &:nth-of-type(3) {
+                    border-right: 0px solid #fff;
+                    border-bottom: 2px solid #fff;
+                }
+
+                &:nth-of-type(4) {
+                    border-bottom: 0px solid #fff;
+                }
+
+                h2 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    .autonomous-sec {
+        padding: 50px 0px;
+
+        img {
+            border-radius: 20px;
+        }
+
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    .supply-chain-sec {
+        padding: 0px 0px 50px;
+        gap: 30px;
+        flex-direction: column;
+
+        .supply-chain-box {
+            padding: 30px 26px;
+            border-radius: 30px;
+            width: 100%;
+            box-sizing: border-box;
+
             h2 {
                 font-size: 32px;
                 line-height: 1.2;
+            }
 
-                br {
-                    display: none;
+            p {
+                margin: 25px 0px;
+                font-size: 18px;
+            }
+
+            a {
+                font-size: 20px;
+                line-height: 1.3;
+                font-weight: 500;
+                position: relative;
+                // padding-right: 29px;
+
+                img {
+                    width: 19px;
+                    // position: absolute;
+                    transition: all 0.77s cubic-bezier(0.25, 0.8, 0.25, 1);
+                    // top: 8px;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    .alerts-business-sec {
+        padding: 50px 0px;
+
+        .owl-carousel .owl-stage {
+            display: block;
+        }
+
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+
+            br {
+                display: none;
+            }
+        }
+
+        .eta-sec {
+            box-sizing: border-box;
+
+            .eta-sec-box {
+                padding: 15px 16px;
+                font-size: 20px;
+                margin: 0px;
+
+                .alerts-sub-title {
+                    font-size: 22px;
+
+                    span {
+                        font-size: 18px;
+                    }
                 }
             }
         }
 
-        .supply-chain-sec {
-            padding: 0px 0px 50px;
-            gap: 30px;
+        .warehouse {
+            margin-top: 30px;
             flex-direction: column;
 
-            .supply-chain-box {
-                padding: 30px 26px;
-                border-radius: 30px;
+            li {
                 width: 100%;
-                box-sizing: border-box;
-
-                h2 {
-                    font-size: 32px;
-                    line-height: 1.2;
-                }
-
-                p {
-                    margin: 25px 0px;
-                    font-size: 18px;
-                }
+                margin-bottom: 16px;
 
                 a {
-                    font-size: 20px;
+                    font-size: 18px;
                     line-height: 1.3;
-                    font-weight: 500;
-                    position: relative;
-                    padding-right: 29px;
+                    // padding-right: 33px;
 
                     img {
                         width: 19px;
-                        position: absolute;
-                        transition: all 0.77s cubic-bezier(0.25, 0.8, 0.25, 1);
-                        top: 8px;
-                        right: 0;
                     }
                 }
             }
         }
+    }
 
-        .alerts-business-sec {
-            padding: 50px 0px;
+    .companies-sec {
+        padding: 50px 0px;
 
-            .owl-carousel .owl-stage {
-                display: block;
-            }
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
 
-            h2 {
-                font-size: 32px;
-                line-height: 1.2;
-
-                br {
-                    display: none;
-                }
-            }
-
-            .eta-sec {
-                box-sizing: border-box;
-
-                .eta-sec-box {
-                    padding: 15px 16px;
-                    font-size: 20px;
-                    margin: 0px;
-
-                    .alerts-sub-title {
-                        font-size: 22px;
-
-                        span {
-                            font-size: 18px;
-                        }
-                    }
-                }
-            }
-
-            .warehouse {
-                margin-top: 30px;
-                flex-direction: column;
-
-                li {
-                    width: 100%;
-                    margin-bottom: 16px;
-
-                    a {
-                        font-size: 18px;
-                        line-height: 1.3;
-                        padding-right: 33px;
-
-                        img {
-                            width: 19px;
-                        }
-                    }
-                }
+            br {
+                display: none;
             }
         }
 
-        .companies-sec {
-            padding: 50px 0px;
+        ul {
+            justify-content: space-between;
+            gap: 20px;
 
-            h2 {
-                font-size: 32px;
-                line-height: 1.2;
-
-                br {
-                    display: none;
-                }
+            li {
+                width: 100%;
+                margin-bottom: 0px;
             }
+        }
+    }
 
-            ul {
-                justify-content: space-between;
-                gap: 20px;
+    .experience-sec {
+        padding: 50px 0px;
 
-                li {
-                    width: 100%;
-                    margin-bottom: 0px;
-                }
+        .free-demo a {
+            font-size: 23px;
+            line-height: 1.2;
+        }
+    }
+
+    .outcomes-sec {
+        padding: 50px 0px;
+
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+        }
+    }
+
+    .awards-sec {
+        padding: 50px 0px;
+
+        .testimonials {
+            padding: 20px;
+            box-sizing: border-box;
+
+            .slider-sec p {
+                line-height: 1.3;
             }
         }
 
-        .experience-sec {
-            padding: 50px 0px;
-
-            .free-demo a {
-                font-size: 23px;
-                line-height: 1.2;
-            }
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
         }
 
-        .outcomes-sec {
-            padding: 50px 0px;
+        ul {
+            gap: 5px;
 
-            h2 {
-                font-size: 32px;
-                line-height: 1.2;
+            li {
+                width: 100%;
+                margin-bottom: 20px;
             }
         }
+    }
 
-        .awards-sec {
-            padding: 50px 0px;
+    .supply-chain-sec-resource {
+        padding: 206px 0px 50px;
 
-            .testimonials {
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+        }
+
+        .supply-chain-list {
+            margin: 40px auto 0px;
+            gap: 20px;
+
+            li {
+                width: 100%;
                 padding: 20px;
-                box-sizing: border-box;
 
-                .slider-sec p {
-                    line-height: 1.3;
-                }
-            }
+                a {
+                    font-size: 18px;
 
-            h2 {
-                font-size: 32px;
-                line-height: 1.2;
-            }
-
-            ul {
-                gap: 5px;
-
-                li {
-                    width: 100%;
-                    margin-bottom: 20px;
+                    img {
+                        width: 26px;
+                    }
                 }
             }
         }
 
-        .supply-chain-sec-resource {
-            padding: 206px 0px 50px;
+    }
 
+    .intelligence-one {
+        padding: 50px 0px 108px;
+
+        .intelligence-sec {
+            h1 {
+                font-size: 40px;
+                line-height: 1.2;
+
+                br {
+                    display: none;
+                }
+            }
+
+            p {
+                margin: 30px 0px 40px;
+            }
+
+            .btn-red {
+                font-size: 23px;
+                line-height: 1.3;
+                margin-bottom: 13px;
+            }
+
+            .btn-link {
+                font-size: 23px;
+                line-height: 1.3;
+                padding: 12px 0px;
+
+                img {
+                    width: 30px;
+                }
+            }
+        }
+    }
+
+    .intelligence-two {
+        .intelligence-box {
+            margin-top: -66px;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+
+            br {
+                display: none;
+            }
+        }
+
+        .intelligence-sec {
             h2 {
                 font-size: 32px;
                 line-height: 1.2;
             }
 
-            .supply-chain-list {
-                margin: 40px auto 0px;
-                gap: 20px;
+            .two-column {
+                padding: 20px 0px 40px;
+                flex-direction: column-reverse;
 
-                li {
+                .half-sec {
                     width: 100%;
-                    padding: 20px;
+                }
+
+                &:nth-of-type(2) {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    .success-stories {
+        padding: 50px 0px;
+
+        .owl-dots button.owl-dot {
+            border: 8px solid black;
+        }
+
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .stories {
+            .two-column {
+                padding: 20px 0px 20px;
+                flex-direction: column-reverse;
+
+                .half-sec {
+                    width: 100%;
+                    background: #161616;
+                    border-top-left-radius: 30px;
+                    border-bottom-left-radius: 30px;
+                    border-radius: 30px;
+                    padding: 22px;
+                    box-sizing: border-box;
 
                     a {
-                        font-size: 18px;
-                        padding-right: 39px;
+                        font-size: 23px;
+                        line-height: 1.3;
+                        width: 237px;
+                        margin: 0 auto;
+                        box-sizing: border-box;
+                        display: block;
+                        margin-bottom: 13px;
+                    }
 
-                        img {
-                            width: 26px;
-                            top: 6px;
+                    img {
+                        border-radius: 30px;
+                    }
+
+                    h2 {
+                        font-size: 32px;
+                        line-height: 1.2;
+
+                        br {
+                            display: none;
                         }
+                    }
+
+                    &:nth-of-type(2) {
+                        padding: 11px;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        background: #343434;
+                        border-radius: 39px;
+                        margin-bottom: 25px;
                     }
                 }
             }
+        }
+
+    }
+
+    .insights {
+        padding: 50px 0px;
+
+        h2 {
+            font-size: 32px;
+            line-height: 1.2;
+            margin-bottom: 0px;
+
+            br {
+                display: none;
+            }
+        }
+
+        .two-column {
+            display: flex;
+            flex-direction: column;
+
+            &.pt-0 {
+                padding-top: 0px;
+            }
+
+            .half-sec {
+                width: 100%;
+                margin-bottom: 25px;
+
+                img {
+                    width: 46px;
+                }
+
+                h4 {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .full-width-img {
+            border-radius: 20px;
+            margin: 20px 0px 57px;
         }
     }
 }

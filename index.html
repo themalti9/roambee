@@ -93,19 +93,20 @@
             <div class="container">
                 <h2 data-aos="fade-up">Alerts & Business Signals<br>
                     to help you make the right decisions</h2>
-            </div>
-            <div class="eta-sec slider1 owl-carousel owl-theme">
-                <div class="eta-sec-box" data-aos="fade-up">
-                    <span class="circle"></span> Location & Geofencing
                 </div>
-                <div class="eta-sec-box" data-aos="fade-up">
-                    <span class="circle"></span>ETA and Delay Signals
+                <div class="eta-sec slider1 owl-carousel owl-theme">
+                    <div class="eta-sec-box" data-aos="fade-up">
+                        <span class="circle"></span> Location & Geofencing
+                    </div>
+                    <div class="eta-sec-box" data-aos="fade-up">
+                        <span class="circle"></span>ETA and Delay Signals
+                    </div>
+                    <div class="eta-sec-box" data-aos="fade-up">
+                        <span class="tringle"></span>
+                        <div class="alerts-sub-title"><span>Business signals for</span>Delivery Time Windows</div>
+                    </div>
                 </div>
-                <div class="eta-sec-box" data-aos="fade-up">
-                    <span class="tringle"></span>
-                    <div class="alerts-sub-title"><span>Business signals for</span>Delivery Time Windows</div>
-                </div>
-            </div>
+            
             <div class="container">
                 <h2 data-aos="fade-up">List of Solutions/Use Cases</h2>
                 <ul class="warehouse">
@@ -281,10 +282,6 @@
                             placeat ad asperiores consequatur. At labore sapiente ea animi explicabo os obcaecati minus.
                             Sit Quis numquam aut numquam dolor sit ipsam itaque sit consequatur laborum est possimus
                             labo
-                            Sit Quis numquam aut numquam dolor sit ipsam itaque sit consequatur laborum est possimus
-                            labo
-                            Sit Quis numquam aut numquam dolor sit ipsam itaque sit consequatur laborum est possimus
-                            labo
                         </p>
                         <h3 data-aos="fade-up">Name Here</h3>
                     </div>
@@ -360,16 +357,17 @@
     });
 
     $('.slider1').owlCarousel({
-        // loop: true,
+        loop: true,
+        center: true,
         dots: false,
         margin: 10,
         nav: false,
         items: 3,
         lazyLoad: true,
-        autoHeight:false,
-        // autoplay: true,
+        autoHeight: false,
+        autoplay: true,
         autoplaySpeed: 2200,
-        autoplayTimeout: 4500,
+        autoplayTimeout: 3000,
         autoplayHoverPause: true,
         responsive: {
             0: {
@@ -378,7 +376,7 @@
             768: {
                 items: 2,
             },
-            992: {
+            1200: {
                 items: 3,
             },
         }
@@ -392,11 +390,10 @@
         items: 1,
         lazyLoad: true,
         autoplay: true,
-        autoplaySpeed: 1000,
-        autoplayTimeout: 4500,
+        autoplaySpeed: 2200,
+        autoplayTimeout: 3000,
         autoplayHoverPause: true,
     })
-    
 </script>
 
 </html>
