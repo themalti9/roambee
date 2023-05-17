@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/aos.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/style.css">
     <title>Intelligence Platform</title>
 </head>
@@ -22,7 +22,7 @@
                     capturing every shipment milestone without relying on any actor in the chain of custody. Accurately
                     forecast and mitigate business-critical disruptions across the multimodal network.</p>
                 <a href="" class="btn-red" data-aos="fade-up">Get a Demo</a> <a href="" class="btn-link" data-aos="fade-up">See How it Works <img
-                        src="img/right-white.svg" alt=""></a>
+                        src="https://www.roambee.com/wp-content/uploads/2023/05/right-white.png" alt=""></a>
             </div>
         </div>
     </div>
@@ -80,7 +80,7 @@
         <div class="container">
             <div class="free-demo" >
                 <a href="" data-aos="fade-up" data-aos="fade-up">Experience the power of Roambee:Request a Free Demo <img
-                        src="img/right-white.svg" alt=""></a>
+                        src="https://www.roambee.com/wp-content/uploads/2023/05/right-white.png" alt=""></a>
             </div>
         </div>
     </div>
@@ -180,7 +180,7 @@
             <h2 data-aos="fade-up">Benefits for Each Industry</h2>
             <div class="two-column">
                 <div class="half-sec">
-                    <img src="img/arrow-box.png" alt="" data-aos="fade-up">
+                    <img src="https://www.roambee.com/wp-content/uploads/2023/05/arrow-box.png" alt="" data-aos="fade-up">
                     <h4 data-aos="fade-up">What are Supply Chain Insights?</h4>
                     <p data-aos="fade-up">Lorem ipsum dolor sit amet. Ut quia nostrum ut
                         commodi aliquam sed voluptas Quis aut dolore
@@ -190,7 +190,7 @@
                         itaque sit consequatur laborum est possimus labo</p>
                 </div>
                 <div class="half-sec">
-                    <img data-aos="fade-up" src="img/arrow-box.png" alt="">
+                    <img data-aos="fade-up" src="https://www.roambee.com/wp-content/uploads/2023/05/arrow-box.png" alt="">
                     <h4 data-aos="fade-up">What are Supply Chain Insights?</h4>
                     <p data-aos="fade-up">Lorem ipsum dolor sit amet. Ut quia nostrum ut
                         commodi aliquam sed voluptas Quis aut dolore
@@ -202,7 +202,7 @@
             </div>
             <div class="two-column pt-0">
                 <div class="half-sec">
-                    <img src="img/arrow-box.png" alt="" data-aos="fade-up">
+                    <img src="https://www.roambee.com/wp-content/uploads/2023/05/arrow-box.png" alt="" data-aos="fade-up">
                     <h4 data-aos="fade-up">What are Supply Chain Insights?</h4>
                     <p data-aos="fade-up">Lorem ipsum dolor sit amet. Ut quia nostrum ut
                         commodi aliquam sed voluptas Quis aut dolore
@@ -212,7 +212,7 @@
                         itaque sit consequatur laborum est possimus labo</p>
                 </div>
                 <div class="half-sec">
-                    <img data-aos="fade-up" src="img/arrow-box.png" alt="">
+                    <img data-aos="fade-up" src="https://www.roambee.com/wp-content/uploads/2023/05/arrow-box.png" alt="">
                     <h4 data-aos="fade-up">What are Supply Chain Insights?</h4>
                     <p data-aos="fade-up">Lorem ipsum dolor sit amet. Ut quia nostrum ut
                         commodi aliquam sed voluptas Quis aut dolore
@@ -228,15 +228,14 @@
         <div class="container">
             <div class="free-demo">
                 <a href="" data-aos="fade-up">Experience the power of Roambee:Request a Free Demo <img
-                        src="img/right-black.svg" alt=""></a>
+                        src="https://www.roambee.com/wp-content/uploads/2023/05/right-black.png" alt=""></a>
             </div>
         </div>
     </div>
 </body>
-<script type="text/javascript" src="js/jquery3.3.1.min.js"></script>
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script> -->
-<script type="text/javascript" src="js/aos.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
 <script>
     AOS.init({
         easing: 'ease-out-back',
@@ -247,18 +246,6 @@
         once: true,
     });
 
-    $('.count').each(function () {
-        $(this).prop('Counter', 0).animate({
-            Counter: $(this).text()
-        }, {
-            duration: 4000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
-    });
-
     $('.stories').owlCarousel({
         loop: true,
         dots: true,
@@ -266,9 +253,9 @@
         nav: false,
         items: 1,
         lazyLoad: true,
-        // autoplay: true,
-        // autoplaySpeed: 2200,
-        // autoplayTimeout: 3000,
+        autoplay: true,
+        autoplaySpeed: 2200,
+        autoplayTimeout: 3000,
         autoplayHoverPause: true,
     })
 </script>

@@ -12,6 +12,10 @@ body {
   box-sizing: border-box;
 }
 
+#Content {
+  padding-top: 0 !important;
+}
+
 .gradient-back {
   background: rgb(253, 186, 51);
   background: linear-gradient(90deg, rgb(253, 186, 51) 50%, rgb(254, 220, 0) 81%);
@@ -33,7 +37,7 @@ body {
 }
 
 .about-us-banner {
-  padding-bottom: 207px;
+  padding-bottom: 207px !important;
 }
 .about-us-banner .better-sec {
   display: flex;
@@ -54,7 +58,7 @@ body {
 }
 .about-us-banner .better-sec h3 {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
-  font-size: 32px;
+  font-size: 32px !important;
   line-height: 1.3;
   font-weight: 600;
   margin-top: 25px;
@@ -62,6 +66,9 @@ body {
 }
 .about-us-banner .better-sec h3 span {
   text-decoration: underline;
+  font-size: 32px !important;
+  line-height: 1.3;
+  font-weight: 600;
 }
 .about-us-banner .better-sec a.btn-red {
   display: inline-block;
@@ -93,7 +100,7 @@ body {
   margin: 0px;
   border-radius: 30px;
   overflow: hidden;
-  margin-top: -181px;
+  margin-top: -181px !important;
 }
 .four-sec ul {
   display: flex;
@@ -127,6 +134,7 @@ body {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   text-align: center;
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.5;
   margin: 0px;
   margin-top: 13px;
@@ -134,7 +142,7 @@ body {
 }
 
 .autonomous-sec {
-  padding: 70px 0px;
+  padding: 70px 0px !important;
 }
 .autonomous-sec h2 {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
@@ -156,7 +164,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 20px 0px 90px;
+  padding: 20px 0px 90px !important;
   justify-content: space-between;
   column-gap: 50px;
 }
@@ -179,7 +187,9 @@ body {
   color: #fff;
   margin: 32px 0px;
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.5;
+  font-weight: 500;
 }
 .supply-chain-sec .supply-chain-box a {
   color: #fecc02;
@@ -203,8 +213,11 @@ body {
   right: -15px;
 }
 
-.alerts-business-sec {
-  padding: 70px 0px;
+.alerts-business-sec.top-70 {
+  padding-top: 70px !important;
+}
+.alerts-business-sec.bottom-70 {
+  padding-bottom: 70px !important;
 }
 .alerts-business-sec .owl-carousel .owl-stage {
   display: flex;
@@ -237,6 +250,7 @@ body {
   color: #fff;
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   font-size: 27px;
+  font-weight: 500;
   padding: 20px 24px;
   margin: 0px 10px;
   border-radius: 20px;
@@ -313,6 +327,8 @@ body {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   position: relative;
   padding-right: 8px;
+  text-decoration: underline;
+  font-weight: 500;
 }
 .alerts-business-sec .warehouse li a img {
   width: 27px;
@@ -328,7 +344,7 @@ body {
 .companies-sec,
 .awards-sec {
   background: #000;
-  padding: 60px 0px;
+  padding: 60px 0px !important;
 }
 .companies-sec h2,
 .awards-sec h2 {
@@ -363,14 +379,14 @@ body {
 }
 
 .experience-sec {
-  padding: 60px 0px;
+  padding: 60px 0px !important;
 }
 .experience-sec .free-demo {
   text-align: center;
 }
 .experience-sec .free-demo a {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 32px;
   line-height: 1.3;
   text-align: center;
@@ -393,7 +409,7 @@ body {
 }
 
 .outcomes-sec {
-  padding: 60px 0px;
+  padding: 60px 0px !important;
 }
 .outcomes-sec h2 {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
@@ -412,12 +428,13 @@ body {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   position: relative;
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.5;
   margin-bottom: 16px;
 }
 .outcomes-sec ul li:after {
   content: "";
-  background: url(../img/check.svg) no-repeat center;
+  background: url(https://www.roambee.com/wp-content/uploads/2023/05/Green-Tick-Circle.svg) no-repeat center;
   background-size: contain;
   position: absolute;
   width: 28px;
@@ -445,6 +462,7 @@ body {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   margin: 0;
   font-size: 18px;
+  font-weight: 500;
   text-align: center;
   line-height: 1.5;
   color: #3d3c3c;
@@ -452,6 +470,7 @@ body {
 .awards-sec .testimonials .slider-sec h3 {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   font-size: 18px;
+  font-weight: 500;
   text-align: center;
   line-height: 1.5;
   color: #7b7b7b;
@@ -461,7 +480,7 @@ body {
 }
 
 .supply-chain-sec-resource {
-  padding: 206px 0px 60px;
+  padding: 206px 0px 60px !important;
 }
 .supply-chain-sec-resource h2 {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
@@ -493,6 +512,7 @@ body {
   color: #fff;
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   font-size: 24px;
+  font-weight: 500;
   text-decoration: underline;
   position: relative;
 }
@@ -508,7 +528,7 @@ body {
 }
 
 .intelligence-one {
-  padding: 60px 0px 331px;
+  padding: 60px 0px 331px !important;
   position: relative;
   z-index: 1;
 }
@@ -528,6 +548,7 @@ body {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   color: #fff;
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.5;
   margin: 30px 0px 60px;
 }
@@ -575,10 +596,10 @@ body {
   margin: 0px;
   border-radius: 30px;
   overflow: hidden;
-  margin-top: -250px;
+  margin-top: -250px !important;
   position: relative;
   z-index: 2;
-  margin-bottom: 60px;
+  margin-bottom: 60px !important;
 }
 .intelligence-two .intelligence-box img {
   width: 100%;
@@ -615,12 +636,13 @@ body {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   color: #fff;
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.5;
   margin: 30px 0px;
 }
 
 .success-stories {
-  padding: 60px 0px;
+  padding: 60px 0px !important;
 }
 .success-stories h2 {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
@@ -689,6 +711,7 @@ body {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   color: #fff;
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.5;
   margin: 0px 0px 30px;
 }
@@ -707,7 +730,7 @@ body {
 }
 
 .insights {
-  padding: 60px 0px;
+  padding: 60px 0px !important;
 }
 .insights .full-width-img {
   display: block;
@@ -746,6 +769,7 @@ body {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   color: #fff;
   font-size: 32px;
+  font-weight: 600;
   line-height: 1.5;
   margin: 0px;
 }
@@ -753,6 +777,7 @@ body {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   color: #fff;
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.5;
   margin: 25px 0px;
 }
@@ -793,7 +818,10 @@ body {
     display: none;
   }
   .about-us-banner .better-sec h3 {
-    font-size: 23px;
+    font-size: 23px !important;
+  }
+  .about-us-banner .better-sec h3 span {
+    font-size: 23px !important;
   }
   .about-us-banner .better-sec a.btn-red {
     font-size: 24px;
@@ -859,10 +887,13 @@ body {
     margin-top: 20px;
   }
   .about-us-banner .better-sec h3 {
-    font-size: 20px;
+    font-size: 20px !important;
     line-height: 1.3;
     margin-top: 25px;
     margin-bottom: 47px;
+  }
+  .about-us-banner .better-sec h3 span {
+    font-size: 20px !important;
   }
   .four-sec ul {
     padding: 23px;
@@ -883,7 +914,7 @@ body {
     font-size: 40px;
   }
   .autonomous-sec {
-    padding: 50px 0px;
+    padding: 50px 0px !important;
   }
   .autonomous-sec img {
     border-radius: 20px;
@@ -896,7 +927,7 @@ body {
     display: none;
   }
   .supply-chain-sec {
-    padding: 0px 0px 50px;
+    padding: 0px 0px 50px !important;
     gap: 30px;
     flex-direction: column;
   }
@@ -925,8 +956,11 @@ body {
     transition: all 0.77s cubic-bezier(0.25, 0.8, 0.25, 1);
     right: 0;
   }
-  .alerts-business-sec {
-    padding: 50px 0px;
+  .alerts-business-sec.top-70 {
+    padding-top: 50px !important;
+  }
+  .alerts-business-sec.bottom-70 {
+    padding-bottom: 50px !important;
   }
   .alerts-business-sec .owl-carousel .owl-stage {
     display: block;
@@ -968,7 +1002,7 @@ body {
     width: 19px;
   }
   .companies-sec {
-    padding: 50px 0px;
+    padding: 50px 0px !important;
   }
   .companies-sec h2 {
     font-size: 32px;
@@ -986,21 +1020,21 @@ body {
     margin-bottom: 0px;
   }
   .experience-sec {
-    padding: 50px 0px;
+    padding: 50px 0px !important;
   }
   .experience-sec .free-demo a {
     font-size: 23px;
     line-height: 1.2;
   }
   .outcomes-sec {
-    padding: 50px 0px;
+    padding: 50px 0px !important;
   }
   .outcomes-sec h2 {
     font-size: 32px;
     line-height: 1.2;
   }
   .awards-sec {
-    padding: 50px 0px;
+    padding: 50px 0px !important;
   }
   .awards-sec .testimonials {
     padding: 20px;
@@ -1021,7 +1055,7 @@ body {
     margin-bottom: 20px;
   }
   .supply-chain-sec-resource {
-    padding: 206px 0px 50px;
+    padding: 206px 0px 50px !important;
   }
   .supply-chain-sec-resource h2 {
     font-size: 32px;
@@ -1042,7 +1076,7 @@ body {
     width: 26px;
   }
   .intelligence-one {
-    padding: 50px 0px 108px;
+    padding: 50px 0px 108px !important;
   }
   .intelligence-one .intelligence-sec h1 {
     font-size: 40px;
@@ -1068,8 +1102,8 @@ body {
     width: 30px;
   }
   .intelligence-two .intelligence-box {
-    margin-top: -66px;
-    margin-bottom: 50px;
+    margin-top: -66px !important;
+    margin-bottom: 50px !important;
   }
   .intelligence-two h2 {
     font-size: 32px;
@@ -1093,7 +1127,7 @@ body {
     flex-direction: column;
   }
   .success-stories {
-    padding: 50px 0px;
+    padding: 50px 0px !important;
   }
   .success-stories .owl-dots button.owl-dot {
     border: 8px solid black;
@@ -1145,7 +1179,7 @@ body {
     margin-bottom: 25px;
   }
   .insights {
-    padding: 50px 0px;
+    padding: 50px 0px !important;
   }
   .insights h2 {
     font-size: 32px;
