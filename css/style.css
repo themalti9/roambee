@@ -17,20 +17,20 @@ body {
 }
 
 .gradient-back {
-  background: rgb(253, 186, 51);
-  background: linear-gradient(90deg, rgb(253, 186, 51) 50%, rgb(254, 220, 0) 81%);
+  background: rgb(253, 186, 51) !important;
+  background: linear-gradient(90deg, rgb(253, 186, 51) 50%, rgb(254, 220, 0) 81%) !important;
 }
 
 .black-back {
-  background: #000;
+  background: #000 !important;
 }
 
 .grey-back {
-  background: #343434;
+  background: #343434 !important;
 }
 
 .blue-back {
-  background: #2d2ecc;
+  background: #2d2ecc !important;
 }
 .blue-back .free-demo a {
   color: #fff !important;
@@ -96,11 +96,23 @@ body {
 }
 
 .four-sec {
-  background-color: #000;
   margin: 0px;
   border-radius: 30px;
   overflow: hidden;
   margin-top: -181px !important;
+}
+.four-sec.gradient-back ul li {
+  margin: 0px;
+}
+.four-sec.gradient-back ul li:nth-of-type(1), .four-sec.gradient-back ul li:nth-of-type(3) {
+  border-right: 3px solid #000;
+}
+.four-sec.gradient-back ul li:nth-of-type(1), .four-sec.gradient-back ul li:nth-of-type(2) {
+  border-bottom: 3px solid #000;
+}
+.four-sec.gradient-back ul li h2,
+.four-sec.gradient-back ul li p {
+  color: #000;
 }
 .four-sec ul {
   display: flex;
@@ -114,6 +126,7 @@ body {
 .four-sec ul li {
   width: calc(50% - 6px);
   padding: 20px 0px;
+  margin: 0;
 }
 .four-sec ul li:nth-of-type(1), .four-sec ul li:nth-of-type(2) {
   border-bottom: 3px solid #fff;
@@ -139,6 +152,87 @@ body {
   margin: 0px;
   margin-top: 13px;
   margin-bottom: 13px;
+}
+
+.accordion-sec {
+  padding: 60px 0px;
+}
+.accordion-sec h2 {
+  font-family: "Roboto", Arial, Tahoma, sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1.3;
+  text-align: center;
+  margin: 0px 0px 30px;
+  color: #000;
+}
+.accordion-sec ul.accordion-list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: block;
+}
+.accordion-sec ul.accordion-list li {
+  background: #000;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.4s;
+  margin-bottom: 35px;
+}
+.accordion-sec ul.accordion-list li:last-child {
+  margin-bottom: 0px;
+}
+.accordion-sec ul.accordion-list li.active {
+  border-radius: 30px;
+}
+.accordion-sec ul.accordion-list li.active h3:after {
+  content: "-";
+  top: 1px;
+  right: 30px;
+  font-size: 48px;
+}
+.accordion-sec ul.accordion-list li h3 {
+  font-family: "Roboto", Arial, Tahoma, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  color: #fff;
+  padding: 21px 50px 21px 30px;
+  position: relative;
+}
+.accordion-sec ul.accordion-list li h3:after {
+  content: "+";
+  position: absolute;
+  top: 10px;
+  right: 23px;
+  font-family: "Roboto", Arial, Tahoma, sans-serif;
+  font-size: 43px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.accordion-sec ul.accordion-list li .accordion-list-text {
+  display: flex;
+  padding: 0px 30px 30px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  column-gap: 33px;
+}
+.accordion-sec ul.accordion-list li .accordion-list-text .half-sec {
+  font-family: "Roboto", Arial, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+  color: #fff;
+  width: 50%;
+}
+.accordion-sec ul.accordion-list li .accordion-list-text .half-sec img {
+  border-radius: 30px;
+  width: 100%;
+  display: block;
 }
 
 .autonomous-sec {
@@ -213,6 +307,10 @@ body {
   right: -15px;
 }
 
+.alerts-business-sec.black-back h2,
+.alerts-business-sec.black-back .warehouse li a {
+  color: #fff;
+}
 .alerts-business-sec.top-70 {
   padding-top: 70px !important;
 }
@@ -259,6 +357,20 @@ body {
   box-sizing: border-box;
   height: 100%;
 }
+.alerts-business-sec .eta-sec .eta-sec-box.gradient-back {
+  color: #000;
+}
+.alerts-business-sec .eta-sec .eta-sec-box.gradient-back .tringle {
+  border: 33px solid #000;
+  border-top: 0px solid transparent;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+}
+.alerts-business-sec .eta-sec .eta-sec-box.gradient-back .circle {
+  background: #000000;
+  border: 12px solid #7e5c19;
+  -webkit-animation: expandyellow 2s ease infinite;
+}
 .alerts-business-sec .eta-sec .eta-sec-box .tringle {
   display: inline-block;
   border: 33px solid #fdb933;
@@ -296,6 +408,17 @@ body {
   }
   100% {
     border: 12px solid #000;
+  }
+}
+@-webkit-keyframes expandyellow {
+  0% {
+    border: 12px solid #fdb933;
+  }
+  50% {
+    border: 12px solid #8c723c;
+  }
+  100% {
+    border: 12px solid #fdb933;
   }
 }
 @-webkit-keyframes spin {
@@ -411,6 +534,27 @@ body {
 .outcomes-sec {
   padding: 60px 0px !important;
 }
+.outcomes-sec.black-back {
+  padding: 60px 0px 0px !important;
+}
+.outcomes-sec.black-back ul li {
+  color: #fff;
+  margin-bottom: 24px;
+}
+.outcomes-sec.black-back ul li:after {
+  width: 33px;
+  height: 33px;
+  left: -50px;
+  top: 7px;
+}
+.outcomes-sec.black-back ul li h5 {
+  font-family: "Roboto", Arial, Tahoma, sans-serif;
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #fff;
+}
 .outcomes-sec h2 {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   font-weight: 800;
@@ -446,11 +590,8 @@ body {
 .awards-sec ul {
   margin: 40px 0px 40px;
 }
-.awards-sec .owl-carousel .owl-stage {
-  display: flex;
-  align-items: center;
-}
-.awards-sec .testimonials {
+
+.testimonials {
   background: #fff;
   border-radius: 20px;
   padding: 60px;
@@ -458,7 +599,21 @@ body {
   position: relative;
   box-sizing: border-box;
 }
-.awards-sec .testimonials .slider-sec p {
+.testimonials.gradient-back {
+  margin-bottom: 0px;
+  margin-top: 60px;
+}
+.testimonials.gradient-back .slider-sec p {
+  color: #000000;
+}
+.testimonials.gradient-back .slider-sec h3 {
+  color: #434343;
+}
+.testimonials .owl-stage {
+  display: flex;
+  align-items: center;
+}
+.testimonials .slider-sec p {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   margin: 0;
   font-size: 18px;
@@ -467,7 +622,7 @@ body {
   line-height: 1.5;
   color: #3d3c3c;
 }
-.awards-sec .testimonials .slider-sec h3 {
+.testimonials .slider-sec h3 {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -481,6 +636,15 @@ body {
 
 .supply-chain-sec-resource {
   padding: 206px 0px 60px !important;
+}
+.supply-chain-sec-resource.client-testimonial {
+  padding: 60px 0px 60px !important;
+}
+.supply-chain-sec-resource.client-testimonial .client-testimonial-slider {
+  margin-top: 35px;
+}
+.supply-chain-sec-resource.client-testimonial .client-testimonial-slider .owl-stage {
+  transition-timing-function: linear !important;
 }
 .supply-chain-sec-resource h2 {
   font-family: "Roboto", Arial, Tahoma, sans-serif;
@@ -531,6 +695,11 @@ body {
   padding: 60px 0px 331px !important;
   position: relative;
   z-index: 1;
+}
+.intelligence-one.gradient-back .intelligence-sec h1,
+.intelligence-one.gradient-back .intelligence-sec .btn-link,
+.intelligence-one.gradient-back .intelligence-sec p {
+  color: #000;
 }
 .intelligence-one .intelligence-sec {
   text-align: center;
@@ -591,10 +760,11 @@ body {
 .intelligence-two {
   color: #fff;
 }
+.intelligence-two.visibility-sec {
+  padding: 0px 0px 180px !important;
+}
 .intelligence-two .intelligence-box {
-  background-color: #fff;
   margin: 0px;
-  border-radius: 30px;
   overflow: hidden;
   margin-top: -250px !important;
   position: relative;
@@ -639,6 +809,29 @@ body {
   font-weight: 500;
   line-height: 1.5;
   margin: 30px 0px;
+}
+.intelligence-two .intelligence-sec .two-column .half-sec .btn-yellow {
+  color: #fecc02;
+  display: inline-block;
+  font-family: "Roboto", Arial, Tahoma, sans-serif;
+  text-decoration: none;
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.intelligence-two .intelligence-sec .two-column .half-sec .btn-yellow img {
+  width: 29px;
+  position: relative;
+  transition: all 0.77s cubic-bezier(0.25, 0.8, 0.25, 1);
+  top: 0px;
+  right: -5px;
+  display: inline-block;
+  border-radius: 0px;
+}
+.intelligence-two .intelligence-sec .two-column .half-sec .btn-yellow:hover img {
+  right: -15px;
 }
 
 .success-stories {
@@ -895,6 +1088,13 @@ body {
   .about-us-banner .better-sec h3 span {
     font-size: 20px !important;
   }
+  .four-sec.gradient-back ul li:nth-of-type(1), .four-sec.gradient-back ul li:nth-of-type(2), .four-sec.gradient-back ul li:nth-of-type(3) {
+    border-right: 0px solid #fff;
+    border-bottom: 2px solid #000;
+  }
+  .four-sec.gradient-back ul li:nth-of-type(4) {
+    border-bottom: 0px solid #fff;
+  }
   .four-sec ul {
     padding: 23px;
     box-sizing: border-box;
@@ -912,6 +1112,39 @@ body {
   }
   .four-sec ul li h2 {
     font-size: 40px;
+  }
+  .outcomes-sec.black-back ul li {
+    line-height: 1.3;
+  }
+  .outcomes-sec.black-back ul li h5 {
+    font-size: 25px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .accordion-sec {
+    padding: 50px 0px;
+  }
+  .accordion-sec h2 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .accordion-sec ul.accordion-list li .accordion-list-text {
+    padding: 0px 19px 11px;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .accordion-sec ul.accordion-list li .accordion-list-text .half-sec {
+    line-height: 1.3;
+    width: 100%;
+  }
+  .accordion-sec ul.accordion-list li .accordion-list-text .half-sec img {
+    border-radius: 20px;
+    width: 100%;
+  }
+  .accordion-sec ul.accordion-list li h3 {
+    font-size: 22px;
+    line-height: 1.3;
+    padding: 16px 50px 16px 16px;
   }
   .autonomous-sec {
     padding: 50px 0px !important;
@@ -1033,15 +1266,18 @@ body {
     font-size: 32px;
     line-height: 1.2;
   }
-  .awards-sec {
-    padding: 50px 0px !important;
-  }
-  .awards-sec .testimonials {
+  .testimonials {
     padding: 20px;
     box-sizing: border-box;
   }
-  .awards-sec .testimonials .slider-sec p {
+  .testimonials .slider-sec p {
     line-height: 1.3;
+  }
+  .testimonials .slider-sec h3 {
+    font-weight: 700;
+  }
+  .awards-sec {
+    padding: 50px 0px !important;
   }
   .awards-sec h2 {
     font-size: 32px;
@@ -1105,6 +1341,9 @@ body {
     margin-top: -66px !important;
     margin-bottom: 50px !important;
   }
+  .intelligence-two .intelligence-box img {
+    border-radius: 20px;
+  }
   .intelligence-two h2 {
     font-size: 32px;
     line-height: 1.2;
@@ -1122,6 +1361,9 @@ body {
   }
   .intelligence-two .intelligence-sec .two-column .half-sec {
     width: 100%;
+  }
+  .intelligence-two .intelligence-sec .two-column .half-sec img {
+    border-radius: 20px;
   }
   .intelligence-two .intelligence-sec .two-column:nth-of-type(2) {
     flex-direction: column;
